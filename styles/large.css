@@ -1,0 +1,76 @@
+@media (min-width: 38em) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        padding: 1rem;
+        gap: 2rem;
+        font-size: 2.3rem;
+    }
+
+    .navigation {
+        flex-direction: row;
+        gap: 2rem;
+        max-height: none;
+        overflow: visible;
+        background-color: var(--primary-color);
+    }
+
+    .navigation a {
+        gap: 3rem;
+        font-size: 1.6rem;
+    }
+
+    .home-main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+        font-size: 2.5rem;
+    }
+
+    .web-courses {
+        grid-column: 1 / -1;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-me h2,
+    .student-photo h2,
+    .web-courses h2 {
+        padding: 1rem;
+        font-size: 1.9rem;
+    }
+
+    .about-me p {
+        font-size: 1.5rem;
+    }
+
+    .course-filters button {
+        font-size: 1.7rem;
+    }
+
+    .course-list {
+        font-size: 1.4rem;
+    }
+
+    .course-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .course-credits {
+        font-size: 1.3rem;
+    }
+
+    footer p{
+        line-height: 1.4;
+    }
+
+
+}

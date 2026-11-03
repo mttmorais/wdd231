@@ -5,19 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page | WDD 231 - Web Development</title>
+
+    <meta name="description" content="This page is the home page from the WDD231 project.">
+    <meta name="author" content="Matheus Morais">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Hello World</h1>
+        <img src="images/logo.svg" alt="Project Logo" class="name-flex">
+        <span>Matheus Morais</span>
     </header>
+    <button type="button" id="menu" aria-label="Open Navigation Menu"></button>
 
-    <main>
+    <nav class="navigation">
+        <a href="index.html" title="Home">Home</a>
+        <a href="#" title="Chamber">Chamber Project</a>
+        <a href="#" title="Final">Final Project</a>
+    </nav>
+    <main class="home-main">
+        <h1>Home</h1>
 
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>My name is Matheus Morais and I currently live in São Paulo, Brazil. I served
+            a
+            mission at Florianópolis, Santa Catarina - Brazil. I am student
+            of Web Design and Software Development at BYU Pathway Worldwide, I enjoy programming
+            and
+            learning about these things. Happily embracing fatherhood, I have two children (a 4
+            years old girl and newborn baby boy), I am married since 2017 with a wonderful wife.
+            I
+            am
+            a huge Jiu-Jitsu and American football fan.</p>
+        </section>
+
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <img class="student-photo" src="images/student-photo.webp" alt="Matheus Morais photo" loading="lazy">
+        </section>
+
+        <section class="web-courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-filters">
+                <button type="button" data-filter="all" class="active">ALL</button>
+                <button type="button" data-filter="cse">CSE</button>
+                <button type="button" data-filter="wdd">WDD</button>
+            </div>
+
+            <div class="course-list">
+
+            </div>
+
+            <p class="course-credits">
+                The total credits for course listed above is <span id="total-credits"></span>
+            </p>
+        </section>
     </main>
 
     <footer>
-
+        <nav class="socialmedia" aria-label="Social Media Links">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook-square.svg" alt="Facebook link">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/linkedin-square.svg" alt="LinkedIn link">
+            </a>
+            <a href="https://github.com/mttmorais">
+                <img src="images/github-square.svg" alt="GitHub link">
+            </a>
+        </nav>
+        <p>©<span id="currentyear"></span> | Matheus Morais | Brazil</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
