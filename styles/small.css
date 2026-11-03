@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #245372;
-    --secondary-color: #5d8b88;
-    --third-color: #a7b7b7;
+    --primary-color: #1e4661;
+    --secondary-color: #507270;
+    --third-color: #c2caca;
     --background-color: #fafafa;
     --white-color: #ffffff;
     --body-font: "Edu TAS Beginner", cursive;
@@ -170,7 +170,7 @@ main h1 {
     border: none;
     border-radius: 6px;
     background-color: var(--third-color);
-    color: var(--white-color);
+    color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 600;
     cursor: pointer;
@@ -178,6 +178,7 @@ main h1 {
 
 .course-filters button.active {
     background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 .course-filters button:hover {
