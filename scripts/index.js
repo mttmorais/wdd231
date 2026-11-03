@@ -122,9 +122,9 @@ function displayCourses(courseArray) {
     });
 }
 
-// calling the function
 displayCourses(courses);
 
+// creating the function to filter the courses
 const filterButtons = document.querySelectorAll("[data-filter]");
 const totalCreditsElement = document.querySelector("#total-credits");
 
@@ -147,6 +147,7 @@ function filterCourses(filter) {
     totalCreditsElement.textContent = totalCredits;
 }
 
+// adding the function to the button
 filterButtons.forEach(button => {
     button.addEventListener("click", () => {
         const selectedFilter = button.dataset.filter;
