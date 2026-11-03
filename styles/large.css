@@ -68,9 +68,11 @@
         font-size: 1.3rem;
     }
 
-    footer p{
+    footer p {
         line-height: 1.4;
     }
 
-
+    .socialmedia {
+        gap: 3rem;
+    }
 }

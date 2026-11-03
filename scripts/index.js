@@ -122,8 +122,6 @@ function displayCourses(courseArray) {
     });
 }
 
-displayCourses(courses);
-
 // creating the function to filter the courses
 const filterButtons = document.querySelectorAll("[data-filter]");
 const totalCreditsElement = document.querySelector("#total-credits");
