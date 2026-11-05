@@ -9,6 +9,14 @@
     <meta name="description" content="This page is the home page from the WDD231 project.">
     <meta name="author" content="Matheus Morais">
 
+    <meta property="og:title" content="Homepage - Matheus Morais | WDD231 Web Design">
+    <meta property="og:description"
+        content="A simple introduction to the student information and about the courses already completed.">
+    <meta property="og:image"
+        content="https://www.churchofjesuschrist.org/imgs/45e59c1c726d11ec9eb5eeeeac1ea79d5f76a9ce/full/!1280%2C674/0/default">
+        <meta property="og:url" content="https://mttmorais.github.io/wdd231/">
+    
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -27,10 +35,12 @@
         </header>
         <button type="button" id="menu" aria-label="Open Navigation Menu"></button>
 
-        <nav class="navigation">
-            <a class="current" href="index.html" title="Home">Home</a>
-            <a href="#" title="Chamber">Chamber Project</a>
-            <a href="#" title="Final">Final Project</a>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a class="current" href="index.html" title="Home">Home</a></li>
+                <li><a href="#" title="Chamber">Chamber Project</a></li>
+                <li><a href="#" title="Final">Final Project</a></li>
+            </ul>
         </nav>
     </div>
     <main class="home-main">
