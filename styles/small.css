@@ -109,14 +109,12 @@ header img {
     transform: scale(1.1);
 }
 
-.navigation a:hover::after {
-    content: "↼";
-    margin-left: 1rem;
-    color: var(--white-color);
-}
-
 .navigation.open {
     max-height: 320px;
+}
+
+.current {
+    background-color: var(--secondary-color);
 }
 
 /* ABOUT ME AND STUDENT PHOTO */

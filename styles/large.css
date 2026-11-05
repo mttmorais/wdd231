@@ -11,14 +11,12 @@
 
     .navigation {
         flex-direction: row;
-        gap: 2rem;
         max-height: none;
         overflow: visible;
         background-color: var(--primary-color);
     }
 
     .navigation a {
-        gap: 3rem;
         font-size: 1.6rem;
     }
 
