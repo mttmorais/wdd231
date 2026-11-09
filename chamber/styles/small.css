@@ -1,0 +1,200 @@
+/*----------------------------- SITE WIDE -----------------------------*/
+:root {
+    --primary-color: #1e4661;
+    --secondary-color: #507270;
+    --third-color: #c2caca;
+    --background-color: #fafafa;
+    --white-color: #ffffff;
+    --body-font: "Edu TAS Beginner", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+/*------------------------------ HEADER ------------------------------*/
+
+header {
+    display: grid;
+    grid-template-columns: 48px auto 44px;
+    padding: 0.5rem 1rem;
+    align-items: end;
+    column-gap: 1.5rem;
+    background-color: var(--primary-color);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+header button {
+    padding-bottom: 0.2rem;
+}
+
+/*------------------------ HAMBURGER NAVIGATION ------------------------*/
+.ham-menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.ham-menu::before {
+    content: "☰";
+}
+
+.ham-menu.open::before {
+    content: "✗";
+}
+
+.navigation {
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    transition: max-height 0.4s ease;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 550;
+    text-align: initial;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.navigation a:hover {
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+}
+
+.navigation a:active {
+    transform: scale(1.1);
+}
+
+.navigation.open {
+    max-height: 320px;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.current {
+    background-color: var(--secondary-color);
+}
+
+/*------------------------------ CARDS ------------------------------*/
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+#cards section {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 1rem 0.2rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.12);
+}
+
+#cards h2 {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+    padding-bottom: 0.7rem;
+}
+
+#cards img {
+    width: 100%;
+    max-width: 220px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#cards p {
+    line-height: 1.8;
+}
+
+/*------------------------------ FOOTER ------------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.socialmedia img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s, opacity 0.3s ease;
+}
+
+.socialmedia a:last-child img {
+    transform: scale(1.47);
+}
+
+.socialmedia a:hover {
+    transform: scale(1.12);
+    filter: brightness(1.2);
+    opacity: 0.85;
+}
+
+.footer-info {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.footer-info p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}

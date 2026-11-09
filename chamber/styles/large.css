@@ -1,0 +1,31 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 48px auto;
+    }
+
+    .ham-menu {
+        display: none;
+    }
+
+    .navigation {
+        max-height: none;
+        overflow: visible;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        font-size: 1.6rem;
+    }
+}

@@ -10,10 +10,12 @@
     }
 
     .navigation {
-        flex-direction: row;
         max-height: none;
         overflow: visible;
-        background-color: var(--primary-color);
+    }
+
+    .navigation ul {
+        flex-direction: row;
     }
 
     .navigation a {

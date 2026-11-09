@@ -9,18 +9,58 @@
     <meta name="description" content="This page is about the Camber Directory project from BYU Web Design">
     <meta name="author" content="Matheus Morais">
 
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber Directory Page">
+    <meta property="og:description" content="This page is about the Camber Directory project from BYU Web Design">
+    <meta property="og:image" content="#" />
+    <meta property="og:url" content="https://mttmorais.github.io/wdd231">
+
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/disrectory.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
     <script src="scripts/directory.js" defer></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+
+<div class="site-header">
     <header>
-        <img src="images/favoicon.svg" alt="Chamber of Commerce logo">
+        <img src="images/logo.svg" alt="Chamber of Commerce logo">
         <span>Chamber of Commerce</span>
+        <button id="ham-button" class="ham-menu"></button>
     </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a class="current" href="directory.html" title="Chamber">Chamber Project</a></li>
+            <li><a href="#" title="Final">Final Project</a></li>
+        </ul>
+    </nav>
+</div>
+
+<main>
+    <div id="cards"></div>
+</main>
+
+<footer>
+    <nav class="socialmedia" aria-label="Social Media Links">
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-square.svg"
+                alt="Facebook link"></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-square.svg"
+                alt="LinkedIn link"></a>
+        <a href="https://github.com/mttmorais" target="_blank"><img src="images/github-square.svg"
+                alt="GitHub profile"></a>
+    </nav>
+    <div class="footer-info">
+        <p class="back">©<span id="currentyear"></span> | Matheus Morais | Brazil</p>
+        <p id="lastModified" class="back"></p>
+    </div>
+</footer>
 
 </body>
 

@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Company One",
+            "address": "111 One Avenue, Celebration, FL 11111",
+            "phoneNumber": "+1-111-111-1111",
+            "websiteURL": "https://www.companyone.com",
+            "imageFile": "company-1.webp",
+            "membershipLevel": 3,
+            "foundationDate": "01 January 1995"
+        },
+        {
+            "name": "Company Two",
+            "address": "222 Two Avenue, Celebration, FL 22222",
+            "phoneNumber": "+1-222-222-2222",
+            "websiteURL": "https://www.companytwo.com",
+            "imageFile": "company-2.webp",
+            "membershipLevel": 2,
+            "foundationDate": "02 February 1999"
+        },
+        {
+            "name": "Company Three",
+            "address": "333 Three Avenue, Celebration, FL 33333",
+            "phoneNumber": "+1-333-333-3333",
+            "websiteURL": "https://www.companythree.com",
+            "imageFile": "company-3.webp",
+            "membershipLevel": 3,
+            "foundationDate": "03 March 2003"
+        },
+        {
+            "name": "Company Four",
+            "address": "444 Four Avenue, Celebration, FL 44444",
+            "phoneNumber": "+1-444-444-4444",
+            "websiteURL": "https://www.companyfour.com",
+            "imageFile": "company-4.webp",
+            "membershipLevel": 1,
+            "foundationDate": "04 April 2010"
+        },
+        {
+            "name": "Company Five",
+            "address": "555 Five Avenue, Celebration, FL 55555",
+            "phoneNumber": "+1-555-555-5555",
+            "websiteURL": "https://www.companyfive.com",
+            "imageFile": "company-5.webp",
+            "membershipLevel": 2,
+            "foundationDate": "05 May 2015"
+        },
+        {
+            "name": "Company Six",
+            "address": "666 Six Avenue, Celebration, FL 66666",
+            "phoneNumber": "+1-666-666-6666",
+            "websiteURL": "https://www.companysix.com",
+            "imageFile": "company-6.webp",
+            "membershipLevel": 1,
+            "foundationDate": "06 June 2006"
+        },
+        {
+            "name": "Company Seven",
+            "address": "777 Seven Avenue, Celebration, FL 77777",
+            "phoneNumber": "+1-777-777-7777",
+            "websiteURL": "https://www.companyseven.com",
+            "imageFile": "company-7.webp",
+            "membershipLevel": 3,
+            "foundationDate": "07 July 2000"
+        }
+    ]
+}

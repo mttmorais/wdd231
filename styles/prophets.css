@@ -1,0 +1,78 @@
+/*----------------------------- SITE WIDE -----------------------------*/
+:root {
+    --primary-color: #1e4661;
+    --secondary-color: #507270;
+    --third-color: #c2caca;
+    --background-color: #fafafa;
+    --white-color: #ffffff;
+    --body-font: "Edu TAS Beginner", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+/*------------------------------ HEADER ------------------------------*/
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/*------------------------------ MAIN ------------------------------*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/*------------------------------ CARDS ------------------------------*/
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+#cards section {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.12);
+}
+
+#cards h2 {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+    padding-bottom: 0.7rem;
+}
+
+#cards img {
+    width: 100%;
+    max-width: 220px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#cards p {
+    padding-top: 0.5rem;
+}
+
+/*------------------------------ FOOTER ------------------------------*/
+footer {
+    background-color: var(--primary-color);
+        color: var(--white-color);
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.2rem;
+}
