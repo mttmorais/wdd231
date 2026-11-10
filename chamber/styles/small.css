@@ -19,6 +19,15 @@ body {
     font-family: var(--body-font);
 }
 
+h1 {
+    color: var(--primary-color);
+    margin: 0 0 1rem 0;
+}
+
+main {
+    padding: 1rem;
+}
+
 /*------------------------------ HEADER ------------------------------*/
 
 header {
@@ -36,9 +45,9 @@ header img {
     height: auto;
 }
 
-header h1 {
+header span {
     margin: auto 0;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     color: var(--white-color);
     font-weight: 550;
 }
@@ -113,16 +122,15 @@ header button {
 /* ------------------------- GRID/LIST VIEW ------------------------- */
 
 .page-view {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
     text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .page-view button {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     font-weight: 550;
     cursor: pointer;
     border-radius: 8px;
@@ -145,6 +153,9 @@ header button {
     gap: 1.5rem;
     padding: 1rem;
     align-items: stretch;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--background-color);
 }
 
 #cards.grid section {

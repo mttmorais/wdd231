@@ -128,6 +128,7 @@ main {
 }
 
 main h1 {
+    margin: 0;
     font-size: 2rem;
     color: var(--primary-color);
 }
