@@ -14,6 +14,8 @@ navbutton.addEventListener('click', () => {
 
 // select the HTML div element
 const cards = document.querySelector('#cards');
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
 
 async function getMembersData() {
     try {
@@ -29,6 +31,19 @@ async function getMembersData() {
 
     } catch (error) {
         console.error(error);
+    }
+}
+
+// discovering the membership level
+function getMembershipLevel(level) {
+    if (level === 1) {
+        return "Member";
+    } else if (level === 2) {
+        return "Silver";
+    } else if (level === 3) {
+        return "Gold";
+    } else {
+        return "Unknown"
     }
 }
 
@@ -48,14 +63,16 @@ const displayMembers = (companies) => {
 
         // add content
         name.textContent = `${company.name}`;
-        address.textContent = `Address: ${company.address}`;
-        phone.textContent = `Phone number: ${company.phoneNumber}`;
-        website.textContent = company.websiteURL;
-        level.textContent = `Membership Level: ${company.membershipLevel}`;
-        foundationDate.textContent = `Foundation date: ${company.foundationDate}`;
+        address.innerHTML = `<span class="label">Address:</span> ${company.address}`;
+        phone.innerHTML = `<span class="label">Phone number:</span> ${company.phoneNumber}`;
+        website.innerHTML = company.websiteURL;
+        level.innerHTML = `<span class="label">Membership Level:</span> ${getMembershipLevel(company.membershipLevel)}`;
+        foundationDate.innerHTML = `<span class="label">Foundation date:</span> ${company.foundationDate}`;
 
         // add url attribute
         website.setAttribute('href', company.websiteURL)
+        website.setAttribute('target', '_blank');
+        website.setAttribute('rel', 'noopener noreferrer');
 
         // add image attribute
         picture.setAttribute('src', company.imageFile);
@@ -69,14 +86,23 @@ const displayMembers = (companies) => {
         card.appendChild(picture);
         card.appendChild(address);
         card.appendChild(phone);
-        card.appendChild(website);
         card.appendChild(level);
         card.appendChild(foundationDate);
+        card.appendChild(website);
 
         // add card to the main div
         cards.appendChild(card);
     });
 }
+
+// --------- PAGE OVERVIEW ---------- 
+gridbutton.addEventListener("click", () => {
+    cards.classList.replace("list", "grid");
+});
+
+listbutton.addEventListener("click", () => {
+    cards.classList.replace("grid", "list");
+});
 
 //call the function
 getMembersData();

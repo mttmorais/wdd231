@@ -12,11 +12,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--body-font);
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--white-color);
+    font-family: var(--body-font);
 }
 
 /*------------------------------ HEADER ------------------------------*/
@@ -39,6 +39,7 @@ header img {
 header span {
     font-size: 2rem;
     color: var(--white-color);
+    font-weight: 600;
 }
 
 header button {
@@ -108,38 +109,153 @@ header button {
     background-color: var(--secondary-color);
 }
 
-/*------------------------------ CARDS ------------------------------*/
+/* ------------------------- GRID/LIST VIEW ------------------------- */
+
+.page-view {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.page-view button {
+    padding: 0.5rem 1rem;
+    font-weight: 550;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+.page-view button:hover {
+    background-color: var(--third-color);
+}
+
+/* ------------------------------ CARDS ------------------------------ */
 #cards {
+    padding: 0.5rem;
+}
+
+/* ---------- Grid View ---------- */
+#cards.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-    padding: 1rem;
+    align-items: stretch;
 }
 
-#cards section {
+#cards.grid section {
     background-color: var(--white-color);
     border-radius: 10px;
-    padding: 1rem 0.2rem;
-    text-align: center;
+    padding: 1rem;
     box-shadow: 0 2px 8px rgb(0, 0, 0, 0.12);
 }
 
-#cards h2 {
-    color: var(--secondary-color);
-    font-size: 1.25rem;
-    padding-bottom: 0.7rem;
+#cards.grid section p {
+    font-size: 1.2rem;
 }
 
-#cards img {
+#cards.grid img {
+    display: block;
+    margin: 0 auto;
     width: 100%;
-    max-width: 220px;
-    height: 250px;
+    max-width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 10px;
 }
 
+
+/* ---------- List View ---------- */
+
+#cards.list {
+    display: flex;
+    flex-direction: column;
+}
+
+#cards.list section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 1rem;
+    align-items: center;
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#cards.list h2 {
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+
+#cards.list section p:nth-of-type(1) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#cards.list section p:nth-of-type(2) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#cards.list section p:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#cards.list section p:nth-of-type(4) {
+    grid-column: 2 / 4;
+    grid-row: 3;
+}
+
+#cards.list section a {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#cards.list img {
+    display: none;
+}
+
+#cards.list section:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+#cards h2 {
+    color: var(--secondary-color);
+    font-size: 1.7rem;
+    padding-bottom: 0.7rem;
+}
+
 #cards p {
     line-height: 1.8;
+}
+
+#cards a {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3 ease;
+}
+
+#cards a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+#cards a:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 4px;
+    border-radius: 3px;
+}
+
+.label {
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 /*------------------------------ FOOTER ------------------------------*/

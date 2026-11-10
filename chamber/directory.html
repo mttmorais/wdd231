@@ -26,41 +26,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
+<body>
+    <div class="site-header">
+        <header>
+            <img src="images/logo.svg" alt="Chamber of Commerce logo" width="48" height="48">
+            <span>Chamber of Commerce</span>
+            <button id="ham-button" class="ham-menu" aria-label="Menu optionsOpen navigation menu"></button>
+        </header>
 
-<div class="site-header">
-    <header>
-        <img src="images/logo.svg" alt="Chamber of Commerce logo">
-        <span>Chamber of Commerce</span>
-        <button id="ham-button" class="ham-menu"></button>
-    </header>
-
-    <nav id="nav-bar" class="navigation">
-        <ul>
-            <li><a href="index.html" title="Home">Home</a></li>
-            <li><a class="current" href="directory.html" title="Chamber">Chamber Project</a></li>
-            <li><a href="#" title="Final">Final Project</a></li>
-        </ul>
-    </nav>
-</div>
-
-<main>
-    <div id="cards"></div>
-</main>
-
-<footer>
-    <nav class="socialmedia" aria-label="Social Media Links">
-        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-square.svg"
-                alt="Facebook link"></a>
-        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-square.svg"
-                alt="LinkedIn link"></a>
-        <a href="https://github.com/mttmorais" target="_blank"><img src="images/github-square.svg"
-                alt="GitHub profile"></a>
-    </nav>
-    <div class="footer-info">
-        <p class="back">©<span id="currentyear"></span> | Matheus Morais | Brazil</p>
-        <p id="lastModified" class="back"></p>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a class="current" href="directory.html" title="Chamber">Chamber Project</a></li>
+                <li><a href="#" title="Final">Final Project</a></li>
+            </ul>
+        </nav>
     </div>
-</footer>
+
+    <main>
+        <div class="page-view">
+            <button id="grid">Grid View</button>
+            <button id="list">List View</button>
+        </div>
+
+        <div id="cards" class="grid"></div>
+    </main>
+
+    <footer>
+        <nav class="socialmedia" aria-label="Social Media Links">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-square.svg"
+                    alt="Facebook link"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-square.svg"
+                    alt="LinkedIn link"></a>
+            <a href="https://github.com/mttmorais" target="_blank"><img src="images/github-square.svg"
+                    alt="GitHub profile"></a>
+        </nav>
+        <div class="footer-info">
+            <p class="back">©<span id="currentyear"></span> | Matheus Morais | Brazil</p>
+            <p id="lastModified" class="back"></p>
+        </div>
+    </footer>
 
 </body>
 
