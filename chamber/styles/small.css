@@ -162,7 +162,7 @@ header button {
     background-color: var(--white-color);
     border-radius: 10px;
     padding: 1rem;
-    box-shadow: 0 2px 8px rgb(0, 0, 0, 0.12);
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--third-color) 80%, transparent);
 }
 
 #cards.grid section p {
