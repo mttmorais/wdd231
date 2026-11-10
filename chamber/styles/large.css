@@ -30,6 +30,10 @@
         font-size: 1.6rem;
     }
 
+    .page-view button {
+        font-size: 1.4rem;
+    }
+
     #cards.list section {
         grid-template-columns: 1fr 2fr 2fr;
         grid-template-rows: repeat(3, auto);
@@ -64,4 +68,5 @@
         grid-column: 2;
         grid-row: 2;
     }
+
 }
