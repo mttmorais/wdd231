@@ -21,6 +21,7 @@
         padding: 1rem;
     }
 
+    /* ---------- hamburger nav ----------- */
     .ham-menu {
         display: none;
     }
@@ -38,8 +39,14 @@
         font-size: 1.6rem;
     }
 
+    /* ---------- cards ----------- */
     .page-view button {
         font-size: 1.4rem;
+    }
+
+    /* ----- grid ------ */
+    #cards.grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     #cards.list section {

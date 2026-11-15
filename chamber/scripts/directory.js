@@ -1,14 +1,6 @@
-// ---------------------------------------- HEADER ----------------------------------------
+import { initializeNavigation, lastModification } from "./common-use.js";
 
-// Store the selected elements that we are going to use
-const navbutton = document.querySelector('#ham-button');
-const navigation = document.querySelector('.navigation');
-
-// Toggle the open class off and on
-navbutton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    navbutton.classList.toggle('open');
-});
+initializeNavigation()
 
 // ---------------------------------------- MAIN CARDS ---------------------------------------- 
 
@@ -107,12 +99,4 @@ listbutton.addEventListener("click", () => {
 //call the function
 getMembersData();
 
-// ---------------------------------------- FOOTER ---------------------------------------- 
-
-const lastModified = document.querySelector("#lastModified");
-const year = document.querySelector("#currentyear");
-
-const today = new Date();
-
-lastModified.textContent = "Last Modified: " + document.lastModified;
-year.textContent = today.getFullYear();
+lastModification()

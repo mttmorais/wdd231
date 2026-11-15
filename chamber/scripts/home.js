@@ -1,3 +1,6 @@
+import { initializeNavigation, lastModification } from "./common-use.js";
+
+initializeNavigation()
 
 // -----------------------------------EVENTS ----------------------------------
 
@@ -254,3 +257,5 @@ function displaySpotlights(selectedCompanies) {
         spotlightCards.appendChild(card);
     });
 }
+
+lastModification()
