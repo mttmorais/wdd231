@@ -288,7 +288,9 @@ header button {
 }
 
 /*------------------------------ HOMEPAGE ------------------------------*/
-
+.homepage {
+    padding: 0;
+}
 /* ---------- hero ----------- */
 .hero {
     position: relative;
