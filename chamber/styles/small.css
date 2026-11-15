@@ -307,7 +307,7 @@ header button {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: color-mix(in srgb, var(--secondary-color) 40%, transparent);
+    background-color: color-mix(in srgb, var(--primary-color) 60%, transparent);
     z-index: 1;
 }
 
