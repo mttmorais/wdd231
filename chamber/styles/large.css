@@ -3,6 +3,7 @@
     h1 {
         font-size: 2.5rem;
     }
+
     header {
         grid-template-columns: 48px auto;
         padding: 1rem;
@@ -74,6 +75,69 @@
     #cards.list section a {
         grid-column: 2;
         grid-row: 2;
+    }
+
+    /*------------------------------ HOMEPAGE ------------------------------*/
+
+    /* ---------- hero ----------- */
+    .hero img {
+        height: 480px;
+        object-fit: cover;
+    }
+
+    .hero-content {
+        width: 70%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    /* ---------- events ----------- */
+    #events {
+        padding: 2rem;
+    }
+
+    #events h2 {
+        font-size: 2rem;
+    }
+
+    #events>section {
+        padding: 1.25rem 0;
+    }
+
+    #events>section h3 {
+        padding: 1.3rem;
+    }
+
+    /* ---------- weather ----------- */
+    .weather {
+        padding: 2rem;
+    }
+
+    .weather h2 {
+        font-size: 2rem;
+    }
+
+    /* ---------- forecast ----------- */
+    #weather-forecast {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.5rem;
+    }
+
+    #weather-forecast section {
+        padding: 1.5rem;
+    }
+
+    /* ---------- spotlights ----------- */
+    #spotlights-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
     }
 
 }

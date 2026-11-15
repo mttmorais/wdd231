@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 | Chamber Home Page | Matheus Morais</title>
+    <title>Chamber of Commerce Home Page</title>
 
     <meta name="description" content="This page is about the Chamber Directory project from BYU Web Design">
     <meta name="author" content="Matheus Morais">
@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/directory.js" defer></script>
+    <!-- <script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/home.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,15 +37,46 @@
 
         <nav class="navigation">
             <ul>
-                <li><a href="../index.html" title="Home">Home</a></li>
-                <li><a class="current" href="directory.html" title="Chamber">Chamber Project</a></li>
+                <li><a class="current" href="index.html" title="Home">Home</a></li>
+                <li><a href="directory.html" title="Chamber">Chamber Project</a></li>
                 <li><a href="#" title="Final">Final Project</a></li>
             </ul>
         </nav>
     </div>
 
     <main>
-        <h1>Chamber of Commerce Home Page</h1>
+        <section class="hero">
+            <img src="images/celebration-hero.webp" alt="View of Celebration, Florida" width="1200" height="500"
+                fetchpriority="high">
+
+            <div class="hero-content">
+                <h1>Welcome to Celebration</h1>
+                <p>Building a stronger business community together.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section id="events">
+            <h2>Current Events</h2>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <span id="weather-current"></span>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+
+            <h3>Three-Day Forecast</h3>
+            <div id="weather-forecast"></div>
+        </section>
+
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+
+            <div id="spotlights-cards"></div>
+        </section>
 
     </main>
 
