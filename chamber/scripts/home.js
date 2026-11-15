@@ -42,6 +42,7 @@ function displayEvents(events) {
         name.textContent = event.name;
         date.textContent = event.date;
         location.textContent = event.location;
+        location.classList.add("event-location");
         description.textContent = event.description;
 
         // add element to the card

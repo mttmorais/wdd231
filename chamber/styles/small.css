@@ -353,8 +353,7 @@ header button {
 
 #events h2 {
     color: var(--primary-color);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 #events>section {
@@ -362,27 +361,49 @@ header button {
     border-bottom: 1px solid var(--third-color);
 }
 
+#events>section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
 #events>section h3 {
-    color: var(--primary-color);
-    font-size: 1.1rem;
+    color: var(--secondary-color);
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
 }
 
 #events>section p {
-    margin-bottom: 0.4rem;
-    line-height: 1.5;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.event-location::after {
+    content: "📍";
+    margin-left: 0.5rem;
 }
 
 /* ---------- weather ----------- */
 .weather {
     padding: 1rem;
     background-color: var(--background-color);
+    border-radius: 10px;
 }
 
 .weather h2 {
     color: var(--primary-color);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--third-color);
+    padding-bottom: 0.5rem;
+}
+
+.weather h3 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.weather p {
+    padding-top: 0.5rem;
 }
 
 .weather figure {
@@ -399,26 +420,33 @@ header button {
     object-fit: contain;
 }
 
-.weather h3 {
-    columns: var(--primary-color);
-    margin: 1rem 0;
-}
-
 /* ---------- forecast ----------- */
 #weather-forecast {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
 #weather-forecast section {
+    background-color: var(--third-color);
     padding: 1rem;
-    border: 1px solid var(--third-color);
     border-radius: 8px;
     text-align: center;
+    color: var(--primary-color);
+    box-shadow: 1px 1px 8px var(--primary-color);
+}
+
+#weather-forecast section p {
+    padding: 0;
+    font-weight: 500;
 }
 
 /* ---------- spotlights ----------- */
+.spotlights h2 {
+    padding-top: 1rem;
+    color: var(--primary-color);
+}
+
 #spotlights-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -427,7 +455,8 @@ header button {
 }
 
 #spotlights-cards section {
-    border: 1px solid var(--third-color);
+    display: grid;
+    grid-template-columns: 100px 1fr;
     border-radius: 10px;
     padding: 1.5rem;
     text-align: center;
@@ -435,29 +464,44 @@ header button {
 }
 
 #spotlights-cards img {
-    width: 120px;
-    height: 100px;
+    grid-column: 1;
+    grid-row: 2 / 6;
+    width: 100%;
+    height: 120px;
     object-fit: contain;
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
 #spotlights-cards h3 {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--third-color);
+    padding-bottom: 0.5rem;
     margin-bottom: 1rem;
+    text-align: start;
+    color: var(--secondary-color);
 }
 
 #spotlights-cards p {
-    margin: 0.5rem 0;
+    grid-column: 2;
+    text-align: start;
+    margin-left: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 #spotlights-cards a {
+    grid-column: 2;
     display: inline-block;
-    margin-top: 0.75rem;
     text-decoration: none;
     font-weight: bold;
+    text-align: start;
+    color: var(--primary-color);
+    margin-left: 0.5rem;
 }
 
 #spotlights-cards a:hover {
     text-decoration: underline;
+    color: var(--secondary-color);
 }
 
 

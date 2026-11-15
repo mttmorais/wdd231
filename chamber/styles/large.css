@@ -85,6 +85,9 @@
     }
 
     /*------------------------------ HOMEPAGE ------------------------------*/
+    .homepage {
+        padding: 0;
+    }
 
     /* ---------- hero ----------- */
     .hero img {
@@ -97,37 +100,54 @@
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .hero-content p {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
+    }
+
+    /* --- button --- */
+    .cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1.3rem;
     }
 
     /* ---------- events ----------- */
-    #events {
-        padding: 2rem;
-    }
 
     #events h2 {
-        font-size: 2rem;
-    }
-
-    #events>section {
-        padding: 1.25rem 0;
+        font-size: 2.2rem;
+        padding: 0.5rem 0;
     }
 
     #events>section h3 {
-        padding: 1.3rem;
+        font-size: 1.7rem;
+    }
+
+    #events>section p {
+        font-size: 1.3rem;
     }
 
     /* ---------- weather ----------- */
-    .weather {
-        padding: 2rem;
+    .weather h2 {
+        font-size: 2.2rem;
     }
 
-    .weather h2 {
-        font-size: 2rem;
+    .weather>h3 {
+        font-size: 1.7rem;
+    }
+
+    .weather p {
+        font-size: 1.3rem;
+    }
+
+    .weather figure {
+        font-size: 1.3rem;
+    }
+
+    .weather figure img {
+        width: 100px;
+        height: 100px;
     }
 
     /* ---------- forecast ----------- */
@@ -141,10 +161,21 @@
     }
 
     /* ---------- spotlights ----------- */
+    .spotlights h2 {
+        font-size: 2.2rem;
+    }
+
     #spotlights-cards {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         padding: 2rem;
     }
 
+    #spotlights-cards h3 {
+        font-size: 1.7rem;
+    }
+
+    #spotlights-cards section {
+        grid-template-columns: 80px 1fr;
+    }
 }
