@@ -102,7 +102,7 @@ header button {
 }
 
 .navigation a:active {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .navigation.open {
@@ -346,6 +346,10 @@ header button {
 
 .cta-button:hover {
     background-color: var(--secondary-color);
+}
+
+.cta-button:active {
+    transform: scale(1.03);
 }
 
 /* ---------- events ----------- */
