@@ -69,8 +69,6 @@ const latitude = 28.3191;
 const longitude = -81.5409;
 
 // select HTML elements
-const weatherIcon = document.querySelector('#weather-icon');
-const description = document.querySelector('figcaption');
 const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=efa317c51f3cc311c05ba9a702adc7bc`;
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=efa317c51f3cc311c05ba9a702adc7bc`;
 
@@ -167,19 +165,23 @@ function displayWeather(data) {
     const temperature = document.createElement("p");
     const feelsLike = document.createElement("p");
     const humidity = document.createElement("p");
+    const icon = document.createElement("img");
+    const description = document.createElement("p");
 
     temperature.textContent = `${Math.round(data.main.temp)}°F`;
     feelsLike.textContent = `Feels Like: ${Math.round(data.main.feels_like)}°F`;
     humidity.textContent = `Humidity: ${data.main.humidity}%`;
 
     const desc = data.weather[0].description.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
-    weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
-    weatherIcon.setAttribute('alt', desc);
+    icon.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+    icon.setAttribute("alt", data.weather[0].description);
     description.textContent = desc;
 
     currentWeather.appendChild(temperature);
     currentWeather.appendChild(feelsLike);
     currentWeather.appendChild(humidity);
+    currentWeather.appendChild(icon);
+    currentWeather.appendChild(description);
 }
 
 getWeather();

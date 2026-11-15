@@ -412,15 +412,13 @@ header button {
     padding-top: 0.5rem;
 }
 
-.weather figure {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1rem 0;
+#weather-current {
+    padding: 1rem;
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
-.weather figure img {
+.weather img {
     width: 80px;
     height: 80px;
     object-fit: contain;
