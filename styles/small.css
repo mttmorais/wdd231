@@ -4,6 +4,8 @@
     --third-color: #c2caca;
     --background-color: #fafafa;
     --white-color: #ffffff;
+    --red-color: rgb(255, 0, 0);
+    --black-color: rgb(0, 0, 0);
     --body-font: "Edu TAS Beginner", cursive;
 }
 
@@ -244,7 +246,62 @@ main h1 {
     font-weight: 700;
 }
 
-/* FOOTER */
+/*------------------------------ DIALOG ------------------------------*/
+dialog {
+    width: min(90%, 400px);
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+dialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+}
+
+dialog button {
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem;
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+dialog button:hover {
+    background-color: var(--primary-color);
+    color: var(--red-color);
+}
+
+dialog h1 {
+    color: var(--white-color);
+    padding-left: 2rem;
+}
+
+dialog h2 {
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+dialog p {
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.technology {
+    padding-bottom: 1rem;
+}
+
+dialog::backdrop {
+    background-color: color-mix(in srgb, var(--black-color)50%, transparent);
+}
+
+/*------------------------------ FOOTER ------------------------------*/
 footer {
     display: flex;
     flex-direction: column;

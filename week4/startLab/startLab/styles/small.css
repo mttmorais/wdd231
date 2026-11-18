@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+#openButton1, #openButton2, #openButton3,
+dialog button {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    color: darkblue;
+    background-color: aliceblue;
+}
+
+#openButton1:hover, #openButton2:hover, #openButton3:hover,
+dialog button:hover {
+    background-color:cadetblue;
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+}
+
+dialog div {
+    padding: 1rem;
+    color: aliceblue;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}

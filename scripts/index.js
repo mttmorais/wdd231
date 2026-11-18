@@ -119,6 +119,12 @@ function displayCourses(courseArray) {
         card.appendChild(courseCredits);
 
         courseList.appendChild(card);
+
+        // add a click function to each card
+        card.addEventListener('click', () => {
+            displayDetails(course);
+        });
+        
     });
 }
 
@@ -160,7 +166,39 @@ filterButtons.forEach(button => {
 });
 
 filterCourses("all");
+/*------------------------------ DIALOG ------------------------------*/
+const courseDetails = document.querySelector("#courseDetails");
+const closeButton = document.querySelector("#closeButton");
 
+// Get a reference to the HTML dialog elements
+const subjectNumber = document.querySelector("#courseDetails h1")
+const title = document.querySelector("#courseDetails h2");
+const credits = document.querySelector(".credits");
+const description = document.querySelector(".description");
+const certificate = document.querySelector(".certificate");
+const technology = document.querySelector(".technology");
+
+closeButton.addEventListener('click', () => {
+    courseDetails.close();
+});
+
+function displayDetails(course) {
+    subjectNumber.innerHTML = `${course.subject} ${course.number}`;
+    title.innerHTML = course.title;
+    credits.innerHTML = `${course.credits} credits`;
+    certificate.innerHTML = `Certificate: ${course.certificate}`;
+    description.innerHTML = course.description;
+    technology.innerHTML = `Technology: ${course.technology}`;
+    courseDetails.showModal()
+}
+
+closeButton.addEventListener('click', (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
+
+/*------------------------------ FOOTER ------------------------------*/
 // footer time of last modification
 
 const lastModified = document.querySelector("#lastModified");

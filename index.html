@@ -12,10 +12,9 @@
     <meta property="og:title" content="Homepage - Matheus Morais | WDD 231 - Web Development">
     <meta property="og:description"
         content="A simple introduction to the student information and about the courses already completed.">
-    <meta property="og:image"
-        content="https://mttmorais.github.io/wdd231/images/home-page.webp">
-        <meta property="og:url" content="https://mttmorais.github.io/wdd231/">
-    
+    <meta property="og:image" content="https://mttmorais.github.io/wdd231/images/home-page.webp">
+    <meta property="og:url" content="https://mttmorais.github.io/wdd231/">
+
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -75,13 +74,26 @@
             </div>
 
             <div class="course-list">
-
+                
             </div>
 
             <p class="course-credits">
                 The total credits for course listed above is <span id="total-credits"></span>
             </p>
-        </section>
+
+        </section>    
+        <dialog id="courseDetails">
+            <div>
+                <h1></h1>
+                <button id="closeButton">X</button>
+            </div>
+            <h2></h2>
+            <p class="credits"></p>
+            <p class="description"></p>
+            <p class="certificate"></p>
+            <p class="technology"></p>
+        </dialog>
+
     </main>
 
     <footer>

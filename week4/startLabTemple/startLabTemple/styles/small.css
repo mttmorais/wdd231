@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+dialog button {
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    color: rgb(225, 9, 27);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(49, 64, 65);
+}
+
+dialog button:hover {
+    background-color: rgb(238, 219, 219);
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(233, 235, 239);
+    padding: 15px;
+}
+
+dialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    padding: 0.2rem 0 0.7rem;
+    color: rgb(90, 91, 92);
+    border-bottom: rgb(71, 71, 102) 1px solid;
+}
+
+dialog h2 {
+    margin: 0;
+    color: rgb(89, 68, 164);
+}
+
+dialog p {
+    color: rgb(27, 44, 52);
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
