@@ -68,6 +68,11 @@
         font-size: 1.3rem;
     }
 
+    /*------------------------------ DIALOG ------------------------------*/
+    dialog {
+        width: min(90%, 600px);
+    }
+
     footer p {
         line-height: 1.4;
     }

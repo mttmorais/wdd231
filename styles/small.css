@@ -248,6 +248,7 @@ main h1 {
 
 /*------------------------------ DIALOG ------------------------------*/
 dialog {
+    margin: auto;
     width: min(90%, 400px);
     background-color: var(--background-color);
     border: 1px solid var(--primary-color);
@@ -262,6 +263,8 @@ dialog div {
 }
 
 dialog button {
+    grid-column: 2;
+    grid-row: 1;
     border: none;
     border-radius: 8px;
     padding: 0.5rem;
@@ -277,6 +280,7 @@ dialog button:hover {
 }
 
 dialog h1 {
+    grid-row: 1;
     color: var(--white-color);
     padding-left: 2rem;
 }
