@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce Join Page</title>
-    
+
     <meta name="description" content="Join in our group to know more about the local business and companies.">
     <meta name="author" content="Matheus Morais">
-    
+
     <!-- Facebook Open Graph Meta Tags -->
     <meta property="og:title" content="WDD 231 | Chamber Join Page | Matheus Morais">
     <meta property="og:description" content="Join in our group to know more about the local business and companies.">
     <meta property="og:image" content="https://mttmorais.github.io/wdd231/chamber/images/chamber-homepage.webp" />
     <meta property="og:url" content="https://mttmorais.github.io/wdd231/chamber/index.html">
-    
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
     <script type="module" src="scripts/join.js"></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="site-header">
         <header>
@@ -31,7 +33,7 @@
             <span>Celebration Local Business</span>
             <button id="ham-button" class="ham-menu" aria-label="Open navigation menu"></button>
         </header>
-    
+
         <nav class="navigation">
             <ul>
                 <li><a href="index.html" title="Home">Home</a></li>
@@ -42,8 +44,68 @@
         </nav>
     </div>
 
-    <main>
-        
+    <main class="joinPage">
+        <h1>Join</h1>
+
+        <section id="applicationForm">
+            <h2>Membership Application Form</h2>
+            <form method="get" action="thankyou.html">
+
+                <label for="firstName">First Name</label>
+                <input type="text" title="firstName" id="firstName" name="firstName" autocomplete="name"
+                    placeholder="Matthew" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" title="lastName" id="lastName" name="lastName" autocomplete="name"
+                    placeholder="Torres" required>
+
+                <label for="organizationalTitle">Title</label>
+                <input type="text" title="organizationalTitle" id="organizationalTitle" name="organizationalTitle"
+                    autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+
+                <label for="email">Email Address</label>
+                <input type="email" title="email" id="email" name="email" autocomplete="email"
+                    placeholder="your-email-here@example.com" required>
+
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" title="phoneNumber" id="phoneNumber" name="phoneNumber" autocomplete="tel" required>
+
+                <label for="businessName">Organization</label>
+                <input type="text" title="businessName" id="businessName" name="businessName"
+                    autocomplete="organization" required>
+
+                <fieldset>
+                    <legend>Membership Level</legend>
+
+                    <label for="np">
+                        <input type="radio" name="np" id="np" value="1" required>Non Profit Membership</label>
+
+                    <label for="bronze">
+                        <input type="radio" name="bronze" id="bronze" value="2" required>Bronze Membership</label>
+
+                    <label for="silver">
+                        <input type="radio" name="silver" id="silver" value="3" required>Silver Membership</label>
+
+                    <label for="gold">
+                        <input type="radio" name="gold" id="gold" value="4" required>Gold Membership</label>
+                </fieldset>
+
+                <label for="description">Describe your business</label>
+                <textarea title="description" id="description" name="description" placeholder="Tell us about your business..." required></textarea>
+
+                <button class="form-button" type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="membershipInfo">
+            <h2>Membership Levels</h2>
+            <dialog id="membershipDetails">
+                <div>
+                    <h2></h2>
+                    <button id="closeButton"></button>
+                </div>
+            </dialog>
+        </section>
     </main>
 
     <footer>
@@ -61,4 +123,5 @@
         </div>
     </footer>
 </body>
+
 </html>

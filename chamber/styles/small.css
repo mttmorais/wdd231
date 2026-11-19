@@ -5,6 +5,8 @@
     --third-color: #c2caca;
     --background-color: #fafafa;
     --white-color: #ffffff;
+    --red-color: rgb(255, 0, 0);
+    --black-color: rgb(0, 0, 0);
     --body-font: "Edu TAS Beginner", cursive;
 }
 
@@ -176,7 +178,8 @@ header button {
     padding-bottom: 0.5rem;
 }
 
-#cards.grid p, #cards.grid a {
+#cards.grid p,
+#cards.grid a {
     font-size: 1.2rem;
     grid-column: 2;
     text-align: start;
@@ -291,6 +294,7 @@ header button {
 .homepage {
     padding: 0;
 }
+
 /* ---------- hero ----------- */
 .hero {
     position: relative;
@@ -307,7 +311,7 @@ header button {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: color-mix(in srgb, var(--primary-color) 60%, transparent);
+    background-color: color-mix(in srgb, var(--black-color) 55%, transparent);
     z-index: 1;
 }
 
@@ -506,6 +510,105 @@ header button {
 #spotlights-cards a:hover {
     text-decoration: underline;
     color: var(--secondary-color);
+}
+
+/*------------------------------ JOIN PAGE ------------------------------*/
+#applicationForm,
+#membershipInfo {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+
+#membershipInfo {
+    margin-top: 1rem;
+}
+
+.joinPage {
+    display: grid;
+}
+
+.joinPage h1 {
+    grid-column: 1 / -1;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+#applicationForm h2,
+#membershipInfo h2 {
+    padding-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+form {
+    display: grid;
+    gap: 0.5rem;
+}
+
+label {
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+input {
+    border: 1px solid var(--third-color);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+fieldset {
+    display: grid;
+    border: 1px solid var(--third-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 0 0 0;
+}
+
+fieldset label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+    border-color: var(--third-color);
+}
+
+.form-button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0.5rem auto;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: var(--third-color);
+    color: var(--primary-color);
 }
 
 

@@ -178,4 +178,18 @@
     #spotlights-cards section {
         grid-template-columns: 80px 1fr;
     }
+
+    /*------------------------------ JOIN PAGE ------------------------------*/
+    #membershipInfo {
+        margin: 0;
+    }
+
+    .joinPage {
+        grid-template-columns: repeat(2, 1fr);
+            gap: 0.7rem;
+    }
+
+    .joinPage h1 {
+        grid-column: 1 / -1;
+    }
 }
