@@ -69,9 +69,8 @@
             "id": "np",
             "title": "Non Profit Membership",
             "benefits": [
-                "Business directory listening",
-                "Networking opportunities",
-                "Community events"
+                "You'll get a nice plaque with the mayor's stamp on it",
+                "You get to ride on a float Saint Patty's Day"
             ],
             "cost": "Free"
         },
@@ -99,9 +98,12 @@
             "id": "gold",
             "title": "Gold Membership",
             "benefits": [
-                "Business directory listening",
-                "Networking opportunities",
-                "Community events"
+                "Home Page Spotlights",
+                "Invitation to special events",
+                "Free soda at the snack bar",
+                "Discount tickets to all Bowl Games",
+                "You'll get a nice plaque with the mayor's stamp on it",
+                "You get to ride on a float Saint Patty's Day"
             ],
             "cost": "$30 annual"
         }

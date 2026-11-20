@@ -85,6 +85,7 @@ header button {
 .navigation ul {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     list-style: none;
 }
 
@@ -645,6 +646,7 @@ textarea {
 #membershipInfo h3 {
     grid-column: 1 / -1;
     padding: 1rem;
+    margin: 0 auto;
     color: var(--primary-color);
 }
 
@@ -672,6 +674,7 @@ dialog {
     background-color: var(--background-color);
     border: none;
     border-radius: 10px;
+    box-shadow: 0 0 40px var(--black-color);
 }
 
 dialog div {
