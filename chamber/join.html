@@ -68,11 +68,15 @@
                     placeholder="your-email-here@example.com" required>
 
                 <label for="phoneNumber">Phone Number</label>
-                <input type="tel" title="phoneNumber" id="phoneNumber" name="phoneNumber" autocomplete="tel" required>
+                <input type="tel" title="phoneNumber" id="phoneNumber" name="phoneNumber" autocomplete="tel">
 
                 <label for="businessName">Organization</label>
                 <input type="text" title="businessName" id="businessName" name="businessName"
                     autocomplete="organization" required>
+
+                <label for="description">Describe your business</label>
+                <textarea title="description" id="description" name="description"
+                    placeholder="Tell us about your business..."></textarea>
 
                 <fieldset>
                     <legend>Membership Level</legend>
@@ -90,22 +94,26 @@
                         <input type="radio" name="gold" id="gold" value="4" required>Gold Membership</label>
                 </fieldset>
 
-                <label for="description">Describe your business</label>
-                <textarea title="description" id="description" name="description" placeholder="Tell us about your business..." required></textarea>
-
                 <button class="form-button" type="submit">Submit</button>
             </form>
         </section>
 
         <section id="membershipInfo">
             <h2>Membership Levels</h2>
-            <dialog id="membershipDetails">
-                <div>
-                    <h2></h2>
-                    <button id="closeButton"></button>
-                </div>
-            </dialog>
         </section>
+        
+        <dialog id="membershipDetails">
+            <div>
+                <h2></h2>
+                <button id="closeButton">X</button>
+            </div>
+            <h3></h3>
+            <ul></ul>
+            <p></p>
+        </dialog>
+
+
+
     </main>
 
     <footer>

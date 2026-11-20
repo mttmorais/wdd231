@@ -63,5 +63,48 @@
             "membershipLevel": 3,
             "foundationDate": "07 July 2000"
         }
+    ],
+    "membership": [
+        {
+            "id": "np",
+            "title": "Non Profit Membership",
+            "benefits": [
+                "Business directory listening",
+                "Networking opportunities",
+                "Community events"
+            ],
+            "cost": "Free"
+        },
+        {
+            "id": "bronze",
+            "title": "Bronze Membership",
+            "benefits": [
+                "Business directory listening",
+                "Networking opportunities",
+                "Community events"
+            ],
+            "cost": "$10 annual"
+        },
+        {
+            "id": "silver",
+            "title": "Silver Membership",
+            "benefits": [
+                "Business directory listening",
+                "Networking opportunities",
+                "Community events"
+            ],
+            "cost": "$20 annual"
+        },
+        {
+            "id": "gold",
+            "title": "Gold Membership",
+            "benefits": [
+                "Business directory listening",
+                "Networking opportunities",
+                "Community events"
+            ],
+            "cost": "$30 annual"
+        }
+    
     ]
 }
