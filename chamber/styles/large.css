@@ -211,6 +211,11 @@
     }
 
     dialog {
-        margin-right: 8rem;
+        position: fixed;
+        /* The property clamp receive 3 properties: (min, preferred, max)
+        2rem will be the min distance from right border
+        17vw proportional distance to the screen and
+        22rem will be the max distance from the right border */
+        margin: auto clamp(2rem, 17vw, 22rem) auto auto;
     }
 }
