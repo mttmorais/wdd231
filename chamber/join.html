@@ -51,25 +51,25 @@
             <h2>Membership Application Form</h2>
             <form method="get" action="thankyou.html">
 
-                <label for="firstName">First Name
-                <input type="text" name="firstName" required autocomplete="first-name" title="Yor First Name" placeholder="Matthew"></label>
+                <label>First Name
+                <input type="text" name="firstName" required autocomplete="given-name" title="Yor First Name" placeholder="Matthew"></label>
 
-                <label for="lastName">Last Name
-                <input type="text" name="lastName" required autocomplete="last-name" title="Your Last Name" placeholder="Stuart"></label>
+                <label>Last Name
+                <input type="text" name="lastName" required autocomplete="family-name" title="Your Last Name" placeholder="Stuart"></label>
 
-                <label for="title">Title
+                <label>Title
                 <input type="text"  name="title" autocomplete="organization-title" title="Your Organizational Title" pattern="[A-Za-z -]{7,}"></label>
 
-                <label for="email">Email Address
+                <label>Email Address
                 <input type="email" name="email" required autocomplete="email" title="Your Email" placeholder="your-email-here@example.com"></label>
 
-                <label for="phoneNumber">Phone Number
+                <label>Phone Number
                 <input type="tel" name="phoneNumber" autocomplete="tel" title="Your Phone Number"></label>
 
-                <label for="businessName">Organization
+                <label>Organization
                 <input type="text" name="businessName" required autocomplete="organization" title="Your Business Name"></label>
 
-                <label for="description">Describe your business
+                <label>Describe your business
                 <textarea name="description" title="Describe Your Business" placeholder="Tell us about your business..."></textarea></label>
                 
                 <input type="hidden" id="timestamp"  name="timestamp">
@@ -77,16 +77,16 @@
                 <fieldset>
                     <legend>Membership Level</legend>
 
-                    <label for="np">
+                    <label>
                         <input type="radio" name="level" value="np" checked>Non Profit Membership</label>
 
-                    <label for="bronze">
+                    <label>
                         <input type="radio" name="level" value="bronze">Bronze Membership</label>
 
-                    <label for="silver">
+                    <label>
                         <input type="radio" name="level" value="silver">Silver Membership</label>
 
-                    <label for="gold">
+                    <label>
                         <input type="radio" name="level" value="gold">Gold Membership</label>
                 </fieldset>
 
