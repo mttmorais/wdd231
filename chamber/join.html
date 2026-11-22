@@ -10,9 +10,9 @@
     <meta name="author" content="Matheus Morais">
 
     <!-- Facebook Open Graph Meta Tags -->
-    <meta property="og:title" content="WDD 231 | Chamber Join Page | Matheus Morais">
+    <meta property="og:title" content="Chamber Join Page">
     <meta property="og:description" content="Join in our group to know more about the local business and companies.">
-    <meta property="og:image" content="https://mttmorais.github.io/wdd231/chamber/images/chamber-homepage.webp" />
+    <meta property="og:image" content="https://mttmorais.github.io/wdd231/chamber/images/chamber-homepage.webp">
     <meta property="og:url" content="https://mttmorais.github.io/wdd231/chamber/index.html">
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -51,50 +51,46 @@
             <h2>Membership Application Form</h2>
             <form method="get" action="thankyou.html">
 
-                <label for="firstName">First Name</label>
-                <input type="text" title="firstName" id="firstName" name="firstName" autocomplete="name"
-                    placeholder="Matthew" required>
+                <label for="firstName">First Name
+                <input type="text" name="firstName" required autocomplete="first-name" title="Yor First Name" placeholder="Matthew"></label>
 
-                <label for="lastName">Last Name</label>
-                <input type="text" title="lastName" id="lastName" name="lastName" autocomplete="name"
-                    placeholder="Torres" required>
+                <label for="lastName">Last Name
+                <input type="text" name="lastName" required autocomplete="last-name" title="Your Last Name" placeholder="Stuart"></label>
 
-                <label for="organizationalTitle">Title</label>
-                <input type="text" title="organizationalTitle" id="organizationalTitle" name="organizationalTitle"
-                    autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+                <label for="title">Title
+                <input type="text"  name="title" autocomplete="organization-title" title="Your Organizational Title" pattern="[A-Za-z -]{7,}"></label>
 
-                <label for="email">Email Address</label>
-                <input type="email" title="email" id="email" name="email" autocomplete="email"
-                    placeholder="your-email-here@example.com" required>
+                <label for="email">Email Address
+                <input type="email" name="email" required autocomplete="email" title="Your Email" placeholder="your-email-here@example.com"></label>
 
-                <label for="phoneNumber">Phone Number</label>
-                <input type="tel" title="phoneNumber" id="phoneNumber" name="phoneNumber" autocomplete="tel">
+                <label for="phoneNumber">Phone Number
+                <input type="tel" name="phoneNumber" autocomplete="tel" title="Your Phone Number"></label>
 
-                <label for="businessName">Organization</label>
-                <input type="text" title="businessName" id="businessName" name="businessName"
-                    autocomplete="organization" required>
+                <label for="businessName">Organization
+                <input type="text" name="businessName" required autocomplete="organization" title="Your Business Name"></label>
 
-                <label for="description">Describe your business</label>
-                <textarea title="description" id="description" name="description"
-                    placeholder="Tell us about your business..."></textarea>
+                <label for="description">Describe your business
+                <textarea name="description" title="Describe Your Business" placeholder="Tell us about your business..."></textarea></label>
+                
+                <input type="hidden" id="timestamp"  name="timestamp">
 
                 <fieldset>
                     <legend>Membership Level</legend>
 
                     <label for="np">
-                        <input type="radio" name="np" id="np" value="1" required>Non Profit Membership</label>
+                        <input type="radio" name="level" value="np" checked>Non Profit Membership</label>
 
                     <label for="bronze">
-                        <input type="radio" name="bronze" id="bronze" value="2" required>Bronze Membership</label>
+                        <input type="radio" name="level" value="bronze">Bronze Membership</label>
 
                     <label for="silver">
-                        <input type="radio" name="silver" id="silver" value="3" required>Silver Membership</label>
+                        <input type="radio" name="level" value="silver">Silver Membership</label>
 
                     <label for="gold">
-                        <input type="radio" name="gold" id="gold" value="4" required>Gold Membership</label>
+                        <input type="radio" name="level" value="gold">Gold Membership</label>
                 </fieldset>
 
-                <button class="form-button" type="submit">Submit</button>
+                <button class="form-button" type="submit">Apply for Membership</button>
             </form>
         </section>
 

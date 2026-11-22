@@ -24,10 +24,8 @@ export function lastModification() {
 
     const today = new Date();
 
-    // Check if both element exist
-    if (lastModified && year) {
-        // Show content
-        lastModified.textContent = "Last Modified: " + document.lastModified;
-        year.textContent = today.getFullYear();
-    }
+    // Show content
+    lastModified.textContent = "Last Modified: " + document.lastModified;
+    year.textContent = today.getFullYear();
+
 }

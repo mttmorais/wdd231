@@ -571,6 +571,7 @@ input {
 
 input,
 textarea {
+    margin-top: 0.5rem;
     width: 100%;
     padding: 0.5rem;
     border-radius: 8px;
@@ -587,7 +588,7 @@ input:required {
 }
 
 input:optional {
-    border-left: 5px solid var(--primary-color);
+    border-left: 5px solid var(--secondary-color);
 }
 
 fieldset {
@@ -595,6 +596,7 @@ fieldset {
     border: 1px solid var(--third-color);
     border-radius: 8px;
     padding: 1rem;
+    border-left: 5px solid var(--red-color);
 }
 
 legend {
@@ -616,7 +618,7 @@ textarea {
     min-height: 120px;
     resize: vertical;
     border-color: var(--third-color);
-    border-left: 5px solid var(--primary-color);
+    border-left: 5px solid var(--secondary-color);
 }
 
 .form-button {
@@ -634,6 +636,23 @@ textarea {
 .form-button:hover {
     background-color: var(--third-color);
     color: var(--primary-color);
+}
+
+/* ----- THANK YOU PAGE ------ */
+.thankyouPage h1 {
+    padding-bottom: 1rem;
+}
+
+#results {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+#results p {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 /* ----- MEMBERSHIP LEVEL SIDE ------ */
@@ -791,8 +810,8 @@ footer {
 }
 
 .socialmedia img {
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
     transition: transform 0.3s ease, filter 0.3s, opacity 0.3s ease;
 }

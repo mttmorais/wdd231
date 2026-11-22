@@ -43,7 +43,7 @@ function displayMembershipLevels(membership) {
         // Create the cards
         const membershipCard = document.createElement("section");
         membershipCard.classList.add("card");
-        
+
         // Create cardTitle
         const cardTitle = document.createElement("h3");
         cardTitle.textContent = `${info.title} Level`;
@@ -94,6 +94,10 @@ membershipDetails.addEventListener('click', (event) => {
 
 getMembersData();
 
-// -----------------------------------  ----------------------------------
+// Get the time when the form was submitted
+const timestamp = document.querySelector("#timestamp");
+timestamp.value = new Date().toISOString();
+
+// ----------------------------------- FOOTER ----------------------------------
 
 lastModification();
