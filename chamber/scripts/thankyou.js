@@ -43,6 +43,7 @@ document.querySelector("#results").innerHTML = `
 <p>now you company: ${myInfo.get('businessName')} joined in our group.</p>
 <p>You applied for ${membershipLevel} Level.</p>
 <p>Your email is ${myInfo.get('email')}</p>
+<p>Your email is ${myInfo.get('phoneNumber')}</p>
 <p>Form Submitted on ${formatDate}</p>`;
 
 // ----------------------------------- FOOTER ----------------------------------
