@@ -1,71 +1,83 @@
-:root {
-    --primary-color: #123B5D;
-    --secondary-color: #5dbdc4;
-    --background-color: #F7F8F5;
-    --heading-font: "Quicksand", sans-serif;
-    --body-font: "Poppins", sans-serif;
-    ;
-}
+@media (min-width: 38rem) {
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    :root {
+        --primary-color: #123B5D;
+        --secondary-color: #5dbdc4;
+        --background-color: #F7F8F5;
+        --heading-font: "Quicksand", sans-serif;
+        --body-font: "Poppins", sans-serif;
+        ;
+    }
 
-body {
-    background-color: var(--background-color);
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-header,
-footer {
-    background-color: var(--primary-color);
-    color: white;
-}
+    body {
+        background-color: var(--background-color);
+        font-size: large;
+    }
 
-h1 {
-    margin: 0;
-    padding: 0.5rem 1rem;
-    font-family: var(--heading-font);
-    color: var(--background-color);
-}
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-h2,
-h3 {
-    margin: 0;
-    padding: 0.5rem 1rem;
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
+    header,
+    footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+    }
 
-p {
-    padding: 0.5rem 1rem;
-    font-family: var(--body-font);
+    h1 {
+        margin: 0;
+        padding: 0.5rem 1rem;
+        font-family: var(--heading-font);
+        color: var(--background-color);
+    }
 
-}
+    h2,
+    h3 {
+        margin: 0;
+        padding: 0.5rem 1rem;
+        font-family: var(--heading-font);
+        color: var(--primary-color);
+    }
 
-div {
-    margin: 1rem;
-    background-color: color-mix(in srgb, var(--secondary-color) 20%, transparent);
-    border-radius: 8px;
-}
+    h3 {
+        text-align: center;
+    }
 
-img {
-    padding: 1rem;
-}
+    p {
+        padding: 0.5rem 1rem;
+        font-family: var(--body-font);
 
-.desktop {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
+    }
 
-.mobile {
-    width: 300px;
-    height: 600px;
-    object-fit: contain;
-}
+    div {
+        margin: 1rem;
+        background-color: color-mix(in srgb, var(--secondary-color) 20%, transparent);
+        border-radius: 8px;
+    }
 
-footer {
-    text-align: center;
+    img {
+        padding: 1rem;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .desktop {
+        width: 600px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .mobile {
+        width: 100%;
+        height: 900px;
+        object-fit: contain;
+    }
 }
