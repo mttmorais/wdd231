@@ -1,0 +1,45 @@
+@media only screen and (min-width: 38rem) {
+    main {
+        max-width: 900px;
+    }
+
+    #discoverCards div {
+        grid-template-areas:
+            "picture name"
+            "picture description"
+            "picture address"
+            "picture button";
+    }
+
+    #discoverCards div h2 {
+        padding: 0 1rem;
+        grid-area: name;
+        text-align: left;
+    }
+
+    #discoverCards div figure {
+        grid-area: picture;
+        padding: 1rem;
+    }
+
+    #discoverCards div img:hover {
+        border-radius: 12px;
+        box-shadow: 0 0 40px var(--black-color);
+        scale: 1.1;
+    }
+
+    #discoverCards div address,
+    #discoverCards div p {
+        margin: 0 1rem;
+        text-align: left;
+    }
+
+    .discoverButton {
+        grid-area: button;
+    }
+
+    #discoverCards div button:hover {
+        background-color: var(--third-color);
+        color: var(--primary-color);
+    }
+}

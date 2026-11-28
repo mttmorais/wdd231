@@ -27,6 +27,7 @@ h1 {
 }
 
 main {
+    width: 100%;
     padding: 1rem;
 }
 
@@ -789,6 +790,85 @@ dialog::backdrop {
     background-color: color-mix(in srgb, var(--black-color)50%, transparent);
 }
 
+/*------------------------------ DISCOVER PAGE ------------------------------*/
+.discoverPage {
+    background-color: var(--background-color);
+}
+
+#visitMessage {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#discoverCards div {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--third-color);
+    gap: 0.5rem;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "picture"
+        "description"
+        "address"
+        "button";
+}
+
+#discoverCards div h2 {
+    grid-area: name;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#discoverCards div figure {
+    grid-area: picture;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#discoverCards div img {
+    border-radius: 7px;
+    object-fit: contain;
+    box-shadow: 0 0 10px var(--black-color);
+}
+
+#discoverCards div address {
+    grid-area: address;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#discoverCards div p {
+    grid-area: description;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.discoverButton {
+    grid-area: button;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin: 0.5rem auto;
+    font-size: 1.4rem;
+    text-decoration: none;
+    width: 140px;
+    height: 45px;
+}
+
+.discoverButton:hover {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
 /*------------------------------ FOOTER ------------------------------*/
 footer {
     display: flex;

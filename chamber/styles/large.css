@@ -1,4 +1,4 @@
-@media (min-width: 38rem) {
+@media only screen and (min-width: 64rem) {
 
     h1 {
         font-size: 2.5rem;
@@ -16,7 +16,7 @@
     }
 
     main {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
         padding: 1rem;
     }
@@ -217,5 +217,43 @@
         17vw proportional distance to the screen and
         22rem will be the max distance from the right border */
         margin: auto clamp(2rem, 17vw, 22rem) auto auto;
+    }
+
+    /*------------------------------ DISCOVER PAGE ------------------------------*/
+    #discoverCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #discoverCards div {
+        grid-template-areas:
+            "name"
+            "picture"
+            "description"
+            "address"
+            "button";
+    }
+
+    #discoverCards div h2 {
+        grid-area: name;
+        text-align: center;
+    }
+
+    #discoverCards div figure {
+        grid-area: picture;
+    }
+
+    #discoverCards div address {
+        grid-area: address;
+        text-align: center;
+    }
+
+    #discoverCards div p {
+        grid-area: description;
+        text-align: center;
+    }
+
+    .discoverButton {
+        grid-area: button;
     }
 }
